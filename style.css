@@ -1,17 +1,154 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
-.header .bager {
+.navbar-left {
   display: flex;
+  align-items: center;
 }
-.header .bager img {
+.navbar-left .img {
   width: 35px;
   height: 36.232px;
 }
-.header .bager p {
+.navbar-left .text {
+  font-family: Rubik;
+  padding-left: 10px;
   color: #0B132A;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.navbar-center .word {
+  margin: 0 40px;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-right .right-text {
+  padding-right: 30px;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.navbar-right .Entrance {
+  width: 150px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #F53855;
+  color: #F53855;
+  background: #FFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .left-side {
+  width: 50%;
+  margin-left: 150px;
+}
+.container .left-side h1 {
+  margin-top: 126px;
+  height: 140px;
+  width: 555px;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 70px;
+}
+.container .left-side p {
+  margin-top: 20px;
+  width: 555px;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container .left-side .btn {
+  margin-top: 50px;
+  border: none;
+  box-shadow: 0px 32px 31px 10px rgba(255, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #F53838;
+  width: 250px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.right-side img {
+  margin-top: 120px;
+  margin-right: 83px;
+  max-width: 100%;
+  height: auto;
+}
+
+.Compartament {
+  display: flex;
+  align-items: flex-start;
+  align-items: stretch;
+  justify-content: center;
+}
+.Compartament .image {
+  width: 24px;
+  height: 24px;
+}
+.Compartament .Extension h2 {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.Compartament .Extension p {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.divider {
+  width: 0px;
+  height: 125.573px;
+  stroke-width: 2px;
+  stroke: #EEEFF2;
 }/*# sourceMappingURL=style.css.map */
