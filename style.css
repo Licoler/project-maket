@@ -72,6 +72,7 @@
 .container .left-side {
   width: 50%;
   margin-left: 150px;
+  margin-top: 100px;
 }
 .container .left-side h1 {
   margin-top: 126px;
@@ -119,25 +120,50 @@
   height: auto;
 }
 
-.Compartament {
+.stats-container {
+  width: 1140px;
+  height: 200px;
+  margin-top: 103px;
+  margin-left: 220px;
+  font-family: Rubik;
+  background-color: #f9fbfd;
   display: flex;
-  align-items: flex-start;
-  align-items: stretch;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-.Compartament .image {
+.stats-container .stat {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.stats-container .stat .icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 70px;
+  background: #FFECEC;
+}
+.stats-container .stat .icon img {
+  display: block;
   width: 24px;
   height: 24px;
+  padding-left: 15px;
+  padding-top: 15px;
 }
-.Compartament .Extension h2 {
-  color: #0B132A;
-  font-family: Rubik;
-  font-size: 25px;
-  font-style: normal;
+.stats-container .stat .info .number {
+  padding-left: 30px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 30px;
 }
-.Compartament .Extension p {
+.stats-container .stat .info .label {
+  padding-top: 5px;
+  padding-left: 36px;
   color: #4F5665;
   font-family: Rubik;
   font-size: 20px;
@@ -145,10 +171,222 @@
   font-weight: 400;
   line-height: 30px;
 }
-
-.divider {
-  width: 0px;
+.stats-container .divider {
+  width: 10px;
   height: 125.573px;
-  stroke-width: 2px;
-  stroke: #EEEFF2;
+  border-right: 1px solid #ECECEC;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more .image {
+  margin-right: 169px;
+  margin-right: 79px;
+  margin-left: 184px;
+  margin-top: 95px;
+}
+.more .text-container {
+  max-width: 600px;
+  margin-right: 70px;
+  margin-top: 70px;
+  margin-left: 169px;
+}
+.more .text-container .sub {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+.more .text-container .description {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.more .text-container .info-blocks {
+  display: flex;
+  flex-direction: column;
+}
+.more .text-container .info-blocks .info-item {
+  display: flex;
+  align-items: center;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+.more .text-container .info-blocks .info-item .icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.chapter {
+  text-align: center;
+}
+.chapter .main-title {
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  margin-top: 211px;
+  margin-bottom: 20px;
+}
+.chapter .main-description {
+  margin-bottom: 60px;
+  color: #4F5665;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 174px;
+  margin-right: 176px;
+}
+.card-container .card {
+  width: 330px;
+  height: 760px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+.card-container .card .card-image {
+  width: 144.904px;
+  height: 165.374px;
+  margin-top: 79px;
+  margin-bottom: 30px;
+}
+.card-container .card .card-title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.card-container .card .card-list {
+  margin: 0;
+  padding: 0 100px;
+}
+.card-container .card .card-list li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.card-container .card .card-list li .icon {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+.card-container .card .card-footer {
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 130px;
+}
+.card-container .card .card-bottom {
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 90px;
+}
+.card-container .card .card-down {
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.card-container .card .card-button {
+  margin-bottom: 50px;
+  border-radius: 50px;
+  border: 2px solid #F53838;
+  width: 177.876px;
+  height: 45px;
+  color: #FFFFFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #F53838;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.huge {
+  text-align: center;
+}
+.huge .see {
+  margin: 0;
+  margin-top: 150px;
+  color: #0B132A;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+}
+.huge .subtitle {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 140px;
+  color: #4F5665;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.huge .main-pic {
+  width: 1060px;
+  height: 537.771px;
 }/*# sourceMappingURL=style.css.map */
